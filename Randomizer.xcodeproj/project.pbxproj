@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		A5A2647F27F1B9AB0089DCEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2647E27F1B9AB0089DCEB /* AppDelegate.swift */; };
 		A5A2648127F1B9AB0089DCEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2648027F1B9AB0089DCEB /* SceneDelegate.swift */; };
-		A5A2648327F1B9AB0089DCEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2648227F1B9AB0089DCEB /* ViewController.swift */; };
 		A5A2648627F1B9AB0089DCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A2648427F1B9AB0089DCEB /* Main.storyboard */; };
 		A5A2648827F1B9AD0089DCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A2648727F1B9AD0089DCEB /* Assets.xcassets */; };
 		A5A2648B27F1B9AD0089DCEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A2648927F1B9AD0089DCEB /* LaunchScreen.storyboard */; };
+		A5A2649727F1BA6C0089DCEB /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2649627F1BA6C0089DCEB /* RandomNumber.swift */; };
+		A5A2649A27F1BFAA0089DCEB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2649927F1BFAA0089DCEB /* SettingsViewController.swift */; };
+		A5A2649C27F1C08F0089DCEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2649B27F1C08F0089DCEB /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5A2647B27F1B9AB0089DCEB /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A2647E27F1B9AB0089DCEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A2648027F1B9AB0089DCEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5A2648227F1B9AB0089DCEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5A2648527F1B9AB0089DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A2648727F1B9AD0089DCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A2648A27F1B9AD0089DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A2648C27F1B9AD0089DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A2649627F1BA6C0089DCEB /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
+		A5A2649927F1BFAA0089DCEB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A5A2649B27F1C08F0089DCEB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		A5A2647D27F1B9AB0089DCEB /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
-				A5A2647E27F1B9AB0089DCEB /* AppDelegate.swift */,
-				A5A2648027F1B9AB0089DCEB /* SceneDelegate.swift */,
-				A5A2648227F1B9AB0089DCEB /* ViewController.swift */,
-				A5A2648427F1B9AB0089DCEB /* Main.storyboard */,
-				A5A2648727F1B9AD0089DCEB /* Assets.xcassets */,
-				A5A2648927F1B9AD0089DCEB /* LaunchScreen.storyboard */,
-				A5A2648C27F1B9AD0089DCEB /* Info.plist */,
+				A5A2649227F1BA0B0089DCEB /* ViewControllers */,
+				A5A2649827F1BA7F0089DCEB /* Models */,
+				A5A2649527F1BA440089DCEB /* Settings */,
+				A5A2649327F1BA1F0089DCEB /* Storyboards */,
+				A5A2649427F1BA320089DCEB /* Resources */,
 			);
 			path = Randomizer;
+			sourceTree = "<group>";
+		};
+		A5A2649227F1BA0B0089DCEB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2649927F1BFAA0089DCEB /* SettingsViewController.swift */,
+				A5A2649B27F1C08F0089DCEB /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5A2649327F1BA1F0089DCEB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2648427F1B9AB0089DCEB /* Main.storyboard */,
+				A5A2648927F1B9AD0089DCEB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5A2649427F1BA320089DCEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2648727F1B9AD0089DCEB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5A2649527F1BA440089DCEB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2647E27F1B9AB0089DCEB /* AppDelegate.swift */,
+				A5A2648027F1B9AB0089DCEB /* SceneDelegate.swift */,
+				A5A2648C27F1B9AD0089DCEB /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A5A2649827F1BA7F0089DCEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2649627F1BA6C0089DCEB /* RandomNumber.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A2648327F1B9AB0089DCEB /* ViewController.swift in Sources */,
 				A5A2647F27F1B9AB0089DCEB /* AppDelegate.swift in Sources */,
 				A5A2648127F1B9AB0089DCEB /* SceneDelegate.swift in Sources */,
+				A5A2649A27F1BFAA0089DCEB /* SettingsViewController.swift in Sources */,
+				A5A2649727F1BA6C0089DCEB /* RandomNumber.swift in Sources */,
+				A5A2649C27F1C08F0089DCEB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_FILE = Randomizer/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_FILE = Randomizer/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
